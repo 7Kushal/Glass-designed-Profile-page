@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 main {
   height: 100vh;
-  background: linear-gradient(to right top, #fffeec, #e41749);
+  background: linear-gradient(to right top, #80918c, #cfd8dc);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +14,7 @@ main {
 .glass {
   background: white;
   min-height: 80vh;
-  width: 80%;
+  width: 85%;
   border-radius: 1rem;
   background: linear-gradient(
     to right bottom,
@@ -22,27 +23,31 @@ main {
   );
   z-index: 3;
   backdrop-filter: blur(1rem);
+  display: flex;
 }
 .sq1,
 .sq2 {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 65%;
+  height: 90%;
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.3)
+    rgba(255, 255, 255, 0.5),
+    rgba(145, 136, 136, 0.7)
   );
+  backdrop-filter: blur(2rem);
+  // background: black;
   border-radius: 9px;
-  //   z-index: 4;
+  color: #353a3b;
+  // z-index: 4;
 }
 .sq1 {
   top: 33%;
   left: 18%;
 }
 .sq2 {
-  bottom: 33%;
-  right: 18%;
+  top: 5%;
+  left: 32%;
 }
 .images {
   width: 30px;
@@ -54,8 +59,8 @@ main {
   border-radius: inherit;
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.1)
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
   );
   text-align: center;
   padding: 30px;
@@ -71,9 +76,9 @@ main {
   color: rgba(00, 00, 00, 0.7);
 }
 .myimage {
-  width: 60px;
-  height: 60px;
-  border-radius: 0.3rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 0.8rem;
   margin-bottom: 10px;
 }
 .link {
@@ -83,4 +88,21 @@ main {
 }
 h2 {
   margin-left: 15px;
+}
+iframe {
+  border-radius: 0.7rem;
+  position: absolute;
+}
+.f1 {
+  top: 22%;
+  left: 9%;
+}
+.f2 {
+  top: 22%;
+  left: 50%;
+}
+
+.music {
+  font-weight: 700;
+  margin: 40px;
 }
