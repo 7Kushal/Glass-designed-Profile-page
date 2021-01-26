@@ -1,0 +1,22 @@
+{
+  "name": "transparent_web_page",
+  "version": "1.0.0",
+  "description": "Landing homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7Kushal/Glass-designed-Profile-page.git"
+  },
+  "author": "kushal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7Kushal/Glass-designed-Profile-page/issues"
+  },
+  "homepage": "https://github.com/7Kushal/Glass-designed-Profile-page#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
