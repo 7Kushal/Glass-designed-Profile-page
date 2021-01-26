@@ -8,8 +8,8 @@
 
 main {
   height: 100vh;
-  background: -webkit-gradient(linear, left bottom, right top, from(#80918c), to(#cfd8dc));
-  background: linear-gradient(to right top, #80918c, #cfd8dc);
+  background: -webkit-gradient(linear, left bottom, right top, from(#000000), to(#000000));
+  background: linear-gradient(to right top, #000000, #000000);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,11 +65,11 @@ main {
 }
 
 .dashboard {
-  width: 30%;
+  width: 28%;
   min-height: 80vh;
   border-radius: inherit;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: -webkit-gradient(linear, left top, right bottom, from(white), to(#afa7a7));
+  background: linear-gradient(to right bottom, white, #afa7a7);
   text-align: center;
   padding: 30px;
   font-family: sans-serif;
@@ -119,17 +119,26 @@ iframe {
 }
 
 .f1 {
-  top: 22%;
-  left: 9%;
+  top: 18%;
+  right: 9%;
 }
 
 .f2 {
-  top: 22%;
-  left: 50%;
+  top: 34%;
+  right: 9%;
 }
 
 .music {
+  float: right;
   font-weight: 700;
   margin: 40px;
+}
+
+.big {
+  font-size: 7rem;
+  z-index: 5;
+  position: absolute;
+  top: 31%;
+  left: 38%;
 }
 /*# sourceMappingURL=style.css.map */
