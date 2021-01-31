@@ -23,11 +23,11 @@ main {
 
 .glass {
   background: white;
-  height: 93%;
+  height: 90%;
   width: 80%;
   border-radius: 1rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 32, 60, 0.3)), to(rgba(29, 23, 23, 0.5)));
-  background: linear-gradient(to right bottom, rgba(245, 32, 60, 0.3), rgba(29, 23, 23, 0.5));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(83, 245, 196, 0.7)), to(rgba(76, 43, 226, 0.5)));
+  background: linear-gradient(to right bottom, rgba(83, 245, 196, 0.7), rgba(76, 43, 226, 0.5));
   z-index: 3;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
@@ -142,6 +142,7 @@ iframe {
   position: relative;
   top: 27%;
   left: 13%;
+  display: inline;
 }
 
 @media (max-width: 900px) {
@@ -152,12 +153,15 @@ iframe {
 
 @media (max-width: 800px) {
   main {
+    height: 100%;
     background: -webkit-gradient(linear, left bottom, right top, from(#080808), to(#858383));
     background: linear-gradient(to right top, #080808, #858383);
   }
   .glass {
+    margin-top: 10%;
+    margin-bottom: 20%;
     background: white;
-    height: 80%;
+    height: 100%;
     width: 80%;
     border-radius: 1rem;
     background: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 32, 60, 0.3)), to(rgba(29, 23, 23, 0.5)));
@@ -192,7 +196,7 @@ iframe {
   }
   .dashboard {
     width: 80%;
-    height: 80%;
+    height: 100%;
     border-radius: inherit;
     background: -webkit-gradient(linear, left top, right bottom, from(#383131), to(black));
     background: linear-gradient(to right bottom, #383131, black);
@@ -223,6 +227,7 @@ iframe {
     margin-bottom: 10px;
   }
   .link {
+    padding: 1%;
     margin: 20px;
     display: -webkit-box;
     display: -ms-flexbox;

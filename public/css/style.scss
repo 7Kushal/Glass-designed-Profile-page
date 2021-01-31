@@ -13,13 +13,13 @@ main {
 }
 .glass {
   background: white;
-  height: 93%;
+  height: 90%;
   width: 80%;
   border-radius: 1rem;
   background: linear-gradient(
     to right bottom,
-    rgba(245, 32, 60, 0.3),
-    rgba(29, 23, 23, 0.5)
+    rgba(83, 245, 196, 0.7),
+    rgba(76, 43, 226, 0.5)
   );
   z-index: 3;
   backdrop-filter: blur(1rem);
@@ -111,6 +111,7 @@ iframe {
   position: relative;
   top: 27%;
   left: 13%;
+  display: inline;
 }
 //cursor code
 @media (max-width: 900px) {
@@ -120,13 +121,15 @@ iframe {
 }
 @media (max-width: 800px) {
   main {
-    // height: 100vh;
+    height: 100%;
     background: linear-gradient(to right top, #080808, #858383);
     // display: grid;
   }
   .glass {
+    margin-top: 10%;
+    margin-bottom: 20%;
     background: white;
-    height: 80%;
+    height: 100%;
     width: 80%;
     border-radius: 1rem;
     background: linear-gradient(
@@ -168,7 +171,7 @@ iframe {
   }
   .dashboard {
     width: 80%;
-    height: 80%;
+    height: 100%;
     border-radius: inherit;
     background: linear-gradient(to right bottom, rgb(56, 49, 49), rgb(0, 0, 0));
     text-align: center;
@@ -194,6 +197,7 @@ iframe {
     margin-bottom: 10px;
   }
   .link {
+    padding: 1%;
     margin: 20px;
     display: flex;
     align-items: center;
