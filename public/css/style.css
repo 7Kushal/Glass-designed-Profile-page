@@ -8,8 +8,8 @@
 
 main {
   height: 100vh;
-  background: -webkit-gradient(linear, left bottom, right top, from(#000000), to(#000000));
-  background: linear-gradient(to right top, #000000, #000000);
+  background: -webkit-gradient(linear, left bottom, right top, from(#ffffff), to(#858383));
+  background: linear-gradient(to right top, #ffffff, #858383);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,11 +23,11 @@ main {
 
 .glass {
   background: white;
-  min-height: 80vh;
-  width: 85%;
+  height: 93%;
+  width: 80%;
   border-radius: 1rem;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.5)));
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 32, 60, 0.3)), to(rgba(29, 23, 23, 0.5)));
+  background: linear-gradient(to right bottom, rgba(245, 32, 60, 0.3), rgba(29, 23, 23, 0.5));
   z-index: 3;
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
@@ -41,8 +41,8 @@ main {
   position: absolute;
   width: 65%;
   height: 90%;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(145, 136, 136, 0.7)));
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(145, 136, 136, 0.7));
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.8)), to(#918888));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), #918888);
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
   border-radius: 9px;
@@ -68,8 +68,8 @@ main {
   width: 28%;
   min-height: 80vh;
   border-radius: inherit;
-  background: -webkit-gradient(linear, left top, right bottom, from(white), to(#afa7a7));
-  background: linear-gradient(to right bottom, white, #afa7a7);
+  background: -webkit-gradient(linear, left top, right bottom, from(#383131), to(black));
+  background: linear-gradient(to right bottom, #383131, black);
   text-align: center;
   padding: 30px;
   font-family: sans-serif;
@@ -88,8 +88,9 @@ main {
 }
 
 .user {
-  font-size: 10px;
-  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
 }
 
 .myimage {
@@ -135,10 +136,137 @@ iframe {
 }
 
 .big {
-  font-size: 7rem;
+  color: black;
+  font-size: 95px;
   z-index: 5;
-  position: absolute;
-  top: 31%;
-  left: 38%;
+  position: relative;
+  top: 27%;
+  left: 13%;
+}
+
+@media (max-width: 900px) {
+  .big {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    height: 100vh;
+    background: -webkit-gradient(linear, left bottom, right top, from(#ffffff), to(#858383));
+    background: linear-gradient(to right top, #ffffff, #858383);
+  }
+  .glass {
+    background: white;
+    height: 80%;
+    width: 80%;
+    border-radius: 1rem;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 32, 60, 0.3)), to(rgba(29, 23, 23, 0.5)));
+    background: linear-gradient(to right bottom, rgba(245, 32, 60, 0.3), rgba(29, 23, 23, 0.5));
+    z-index: 3;
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
+  }
+  .sq1,
+  .sq2 {
+    position: relative;
+    width: 0%;
+    height: 0%;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.8)), to(#918888));
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), #918888);
+    -webkit-backdrop-filter: blur(2rem);
+            backdrop-filter: blur(2rem);
+    border-radius: 9px;
+    color: #353a3b;
+  }
+  .sq1 {
+    top: 33%;
+    left: 18%;
+  }
+  .sq2 {
+    top: 5%;
+    left: 32%;
+  }
+  .images {
+    width: 30px;
+    height: 30px;
+  }
+  .dashboard {
+    width: 80%;
+    height: 100%;
+    border-radius: inherit;
+    background: -webkit-gradient(linear, left top, right bottom, from(#383131), to(black));
+    background: linear-gradient(to right bottom, #383131, black);
+    text-align: center;
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: #0491c0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+  }
+  .myimage {
+    width: 80px;
+    height: 80px;
+    border-radius: 0.8rem;
+    margin-bottom: 10px;
+  }
+  .link {
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  h2 {
+    margin-left: 15px;
+  }
+  iframe {
+    width: 1%;
+    height: 1%;
+    border-radius: 0.7rem;
+    position: absolute;
+  }
+  .f1 {
+    top: 18%;
+    right: 9%;
+  }
+  .f2 {
+    top: 34%;
+    right: 9%;
+  }
+  .music {
+    font-size: 0;
+    width: 1%;
+    height: 1%;
+    float: right;
+    font-weight: 700;
+    margin: 40px;
+  }
+  .big {
+    width: 1%;
+    height: 1%;
+    color: black;
+    font-size: 0;
+    z-index: 5;
+    position: relative;
+    top: 27%;
+    left: 13%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
