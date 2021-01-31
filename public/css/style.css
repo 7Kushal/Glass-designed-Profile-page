@@ -152,9 +152,8 @@ iframe {
 
 @media (max-width: 800px) {
   main {
-    height: 100vh;
-    background: -webkit-gradient(linear, left bottom, right top, from(#ffffff), to(#858383));
-    background: linear-gradient(to right top, #ffffff, #858383);
+    background: -webkit-gradient(linear, left bottom, right top, from(#080808), to(#858383));
+    background: linear-gradient(to right top, #080808, #858383);
   }
   .glass {
     background: white;
@@ -193,7 +192,7 @@ iframe {
   }
   .dashboard {
     width: 80%;
-    height: 100%;
+    height: 80%;
     border-radius: inherit;
     background: -webkit-gradient(linear, left top, right bottom, from(#383131), to(black));
     background: linear-gradient(to right bottom, #383131, black);
@@ -202,9 +201,6 @@ iframe {
     font-family: sans-serif;
     font-size: 0.8rem;
     color: #0491c0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -212,6 +208,7 @@ iframe {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    justify-items: center;
   }
   .user {
     font-size: 10px;
@@ -219,6 +216,7 @@ iframe {
     font-weight: 700;
   }
   .myimage {
+    margin-top: 20px;
     width: 80px;
     height: 80px;
     border-radius: 0.8rem;
