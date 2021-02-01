@@ -19,48 +19,62 @@
                  <p>Profiles</p>
              </div>
             <div class="links">
-        
+                <div class="link">
+                    <a href="http://7kushal.github.io/"><img class="images" src="images/global.png"></a>
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/kushal-jangir-7534b2167/"><img class="images" src="images/linkedin.png"></a>
+                    <h2>LinkedIn</h2>
+                </div>
+                <div class="link">
+                    <a href="https://github.com/7Kushal"><img class="images" src="images/github.png"></a>
+                    <h2>Github</h2>
+                </div>
             <div class="link">
                 <a href="https://www.facebook.com/kushal.jangid.16"><img class="images" src="images/facebook.png" alt=""></a>
                 <h2>Facebook</h2>
             </div>
             <div class="link">
-                <a href=""><img class="images" src="images/instagram.png"></a>
+                <a href="https://www.instagram.com/kushal.jangir_/"><img class="images" src="images/instagram.png"></a>
                 <h2>Instagram</h2>
             </div>
-            <div class="link">
-                <a href="https://www.linkedin.com/in/kushal-jangir-7534b2167/"><img class="images" src="images/linkedin.png"></a>
-                <h2>LinkedIn</h2>
-            </div>
-            <div class="link">
-                <a href="https://github.com/7Kushal"><img class="images" src="images/github.png"></a>
-                <h2>Github</h2>
-            </div>
-            <div class="link">
-                <a href="http://7kushal.github.io/"><img class="images" src="images/global.png"></a>
-                <h2>Portfolio</h2>
-            </div>
-           
         </div>
          </div>
         
          <div class="sq2">
-            <h1 class="music">Music Mode</h1>
-            <h1 class="big">WEB <br>Developer</h1>
+            <h1 class="im">Hello..</h1>
+            <span class="big">Navigate using sidebar</span>
             
-            <iframe class="f1" src="https://open.spotify.com/embed/playlist/3IvW1fVwf9gF1gixUmELhN" width="12%" height="15%" frameborder="0" allowtransparency="true"  allow="encrypted-media"></iframe>
-            <iframe class="f2"src="https://open.spotify.com/embed/playlist/6Q3Qo3XxSj5Cu9pQJlBfzG" width="12%" height="15%" frameborder="0" allowtransparency="true"  allow="encrypted-media"></iframe>
+            <!-- <iframe class="f1" src="https://open.spotify.com/embed/playlist/3IvW1fVwf9gF1gixUmELhN" width="12%" height="15%" frameborder="0" allowtransparency="true"  allow="encrypted-media"></iframe> -->
+            <!-- <iframe class="f2"src="https://open.spotify.com/embed/playlist/6Q3Qo3XxSj5Cu9pQJlBfzG" width="12%" height="15%" frameborder="0" allowtransparency="true"  allow="encrypted-media"></iframe> -->
          </div>
         </section>
         <!-- <div class="sq1"></div> -->
         
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
-        const x = document.querySelector(".cursor");
-    document.addEventListener('mousemove',function(e){
-       x.setAttribute("style","top:"+(e.pageY-18)+"px; left:"+(e.pageX-19)+"px;");
-    
- });
+         const x = document.querySelector('span');
+         $("main").hide()
+         setTimeout(function(){
+            $("main").fadeIn(2000)
+         },2000)
+        
+        // var i = ["Coder","Developer","Learner"];
+        // var y =0;
+        //     setInterval(function(){
+        //         // if(y==3)
+        //         // y=0;
+        //         $(".big").hide(2000)
+        //         x.innerHTML=i[y];
+        //         y++;
+        //         y=y%i.length;
+        //         $(".big").show(2000)
+
+        //     },4000);
     </script>
+    
 </body>
 </html>
